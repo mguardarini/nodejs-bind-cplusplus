@@ -2,12 +2,12 @@
   "name": "cplus_bind_nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "js/cal.js",
+  "main": "js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "install": "node-gyp rebuild",
     "build": "node-gyp rebuild",
-    "start": "babel-node js/cal.js"
+    "start": "babel-node js/index.js"
   },
   "author": "Mauro Guardarini",
   "license": "MIT",
