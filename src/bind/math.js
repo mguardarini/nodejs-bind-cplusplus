@@ -27,21 +27,22 @@ export class Calculator {
 
     }
 
-    Add(){
-        let result = this.math.add(1,2);
-        console.log(result);
-    }
+    Math(value1,value2,operation){
 
-    Minus(){
-    
-        let result = this.math.minus(1,2);
-        console.log(result);
-
+        let result = null;
+        try{
+            if(operation === "add") {
+                return result = this.math.add(value1,value2);
+            }
+            if(operation == "minus") {
+                return result = this.math.minus(value1,value2);
+            }
+            if(operation == "multiply") {
+                return result = this.math.multiply(value1,value2);
+            }    
+        }catch(Exception){
+            console.log("Fail")
+        }
+        
     }
-
-    Multiply(){
-        let result = this.math.multiply(1,2);
-        console.log(result);  
-    }
-    
 }

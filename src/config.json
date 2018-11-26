@@ -1,0 +1,6 @@
+{
+	"port_https":30443,
+	"port": 8080,
+	"bodyLimit": "100kb",
+	"corsHeaders": ["Link"]
+}
