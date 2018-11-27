@@ -25,12 +25,12 @@ export default () => resource({
 		}
 		if(body.operation == "minus"){
 
-			data.result =  body.value1 + " + " + body.value2 + " = " + result.Math(body.value1,body.value2,"minus");
+			data.result =  body.value1 + " - " + body.value2 + " = " + result.Math(body.value1,body.value2,"minus");
 			res.json(data);
 		}
 		if(body.operation == "multiply"){
 
-			data.result =  body.value1 + " + " + body.value2 + " = " + result.Math(body.value1,body.value2,"multiply");
+			data.result =  body.value1 + " x " + body.value2 + " = " + result.Math(body.value1,body.value2,"multiply");
 			res.json(data);
 		}
 	},
